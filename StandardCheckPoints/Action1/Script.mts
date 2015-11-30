@@ -1,13 +1,14 @@
-﻿Dialog("Login").Activate @@ hightlight id_;_1377752_;_script infofile_;_ZIP::ssf7.xml_;_
+﻿Environment.LoadFromFile"G:\VanithaTrainings\VanithaQtp\Environment.xml"
+Dialog("Login").Activate @@ hightlight id_;_1377752_;_script infofile_;_ZIP::ssf7.xml_;_
 
 Dialog("Login").WinEdit("Agent Name:").Check CheckPoint("Agent Name:") @@ hightlight id_;_198140_;_script infofile_;_ZIP::ssf35.xml_;_
 Dialog("Login").WinEdit("Password:").Check CheckPoint("Password:_2") @@ hightlight id_;_394262_;_script infofile_;_ZIP::ssf42.xml_;_
 Dialog("Login").WinButton("OK").Check CheckPoint("OK_2") @@ hightlight id_;_656136_;_script infofile_;_ZIP::ssf78.xml_;_
 Dialog("Login").WinButton("Cancel").Check CheckPoint("Cancel_2") @@ hightlight id_;_2295814_;_script infofile_;_ZIP::ssf76.xml_;_
 Dialog("Login").WinButton("Help").Check CheckPoint("Help_2") @@ hightlight id_;_985086_;_script infofile_;_ZIP::ssf77.xml_;_
-
-Dialog("Login").WinEdit("Agent Name:").Set "abcd" @@ hightlight id_;_198140_;_script infofile_;_ZIP::ssf39.xml_;_
-Dialog("Login").WinEdit("Password:").Set "mercury" @@ hightlight id_;_460560_;_script infofile_;_ZIP::ssf51.xml_;_
+Dialog("Login").WinEdit("Agent Name:").Set  Environment ("agentname")
+ Dialog("Login").WinEdit("Password:").Set Environment("password")
+ @@ hightlight id_;_198140_;_script infofile_;_ZIP::ssf39.xml_;_
 Dialog("Login").WinButton("OK").Click @@ hightlight id_;_1770696_;_script infofile_;_ZIP::ssf52.xml_;_
 
 Window("Flight Reservation").Activate @@ hightlight id_;_1443288_;_script infofile_;_ZIP::ssf11.xml_;_

@@ -1,7 +1,7 @@
-﻿
+﻿Environment.LoadFromFile"G:\VanithaTrainings\VanithaQtp\Environment.xml"
 Dialog("Login").Activate @@ hightlight id_;_853326_;_script infofile_;_ZIP::ssf2.xml_;_
-Dialog("Login").WinEdit("Agent Name:").Set "abcd" @@ hightlight id_;_2361560_;_script infofile_;_ZIP::ssf3.xml_;_
-Dialog("Login").WinEdit("Password:").SetSecure "5659c39da98a1b3400b5829d23e0d22bd80fa0cb" @@ hightlight id_;_1377142_;_script infofile_;_ZIP::ssf4.xml_;_
+Dialog("Login").WinEdit("Agent Name:").Set  Environment ("agentname") @@ hightlight id_;_2361560_;_script infofile_;_ZIP::ssf3.xml_;_
+ Dialog("Login").WinEdit("Password:").Set Environment("password")
 Dialog("Login").WinButton("OK").Click @@ hightlight id_;_1704302_;_script infofile_;_ZIP::ssf5.xml_;_
  @@ hightlight id_;_4786182_;_script infofile_;_ZIP::ssf6.xml_;_
 Window("Flight Reservation_2").WinMenu("Menu").Select "Help;About..."
