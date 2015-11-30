@@ -1,0 +1,10 @@
+<Environment>
+	<Variable>
+		<Name>agentname</Name>
+		<Value>abcd</Value>
+	</Variable>
+	<Variable>
+		<Name>password</Name>
+		<Value>mercury</Value>
+	</Variable>
+</Environment>
