@@ -1,8 +1,9 @@
-﻿Set con=createobject ("Adodb.Connection")
+﻿Environment.LoadFromFile"G:\VanithaTrainings\VanithaQtp\Environment.xml"
+Set con=createobject ("Adodb.Connection")
 Set rec=createobject ("Adodb.recordset")
 
-con.provider="microsoft.jet.oledb.4.0"
-con.open "C:\Program Files (x86)\HP\QuickTest Professional\samples\flight\app\flight32.mdb"
+con.provider=Environment ("Accessprovider")
+con.open Environment ("Accessdatabasepath")
 rec.open "select * from flights",con
 
 While rec.EOF<>true
@@ -13,6 +14,8 @@ wend
 
 Set con=nothing
 Set rec=nothing
+
+
 
 
 

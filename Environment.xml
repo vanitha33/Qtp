@@ -7,4 +7,16 @@
 		<Name>password</Name>
 		<Value>mercury</Value>
 	</Variable>
+	<Variable>
+		<Name>sqlserverprovider</Name>
+		<Value>Provider=sqloledb.1;Server=.\SQLEXPRESS;User Id=sa;Password=system;Database=VanithaTrainings</Value>
+	</Variable>
+	<Variable>
+		<Name>Accessprovider</Name>
+		<Value>microsoft.jet.oledb.4.0</Value>
+	</Variable>
+	<Variable>
+		<Name>Accessdatabasepath</Name>
+		<Value>C:\Program Files (x86)\HP\QuickTest Professional\samples\flight\app\flight32.mdb</Value>
+	</Variable>
 </Environment>
