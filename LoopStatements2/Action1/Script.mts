@@ -23,16 +23,9 @@
 '
 '
 '
-Dim myName
-myName = "Bob"
-Select Case myName
-Case "Bob"
-	msgbox("Been busy Bob?")
-Case "Sara"
-	msgbox("Seen any slick sunglasses Sara?")
-Case "Charles"
-	msgbox("Did you chuck your chowder Charles?")
-End Select
+
+
+
 '
 'For j = 0 To 3 Step 1
 '     msgbox "QTP:" & j

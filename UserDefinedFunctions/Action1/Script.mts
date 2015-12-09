@@ -1,6 +1,10 @@
-﻿'Function  myAddVanitha( x, y)
-'	myAddVanitha=x+y
-'End Function
+﻿Function  myAddVanitha( x, y)
+	myAddVanitha=x+y
+End Function
+
+Dim j
+j=myAddVanitha(6,7)
+msgbox j
 
 'Function  myAddramu( x, y)
 '	myAddramu=x*y
@@ -40,7 +44,7 @@
 'Dim result
 'result = myAddVanitha(10,14)
 'MSGBOX result
-'
+''
 'y="hai"
 'h=StrReverse(y)
 'MSGBOX h
@@ -71,10 +75,10 @@
 'MSGBOX h
 
 
-msgbox("The current system date is: "  & Date)
-
-dt=Date
-msgbox "The current system date is: "  & DatePart("d", dt)  & ":"  & DatePart("m", dt) & ":" & DatePart("yyyy", dt) 
+'msgbox("The current system date is: "  & Date)
+'
+'dt=Date
+'msgbox "The current system date is: "  & DatePart("d", dt)  & ":"  & DatePart("m", dt) & ":" & DatePart("yyyy", dt) 
 
 
 
