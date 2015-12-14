@@ -1,12 +1,10 @@
-﻿Dim objFSO
+﻿Dim objFSO, objTextStream
 Set objFSO = CreateObject("Scripting.FileSystemObject")
-
-Dim objTextStream
 
 const strFileName = "G:\VanithaTrainings\VanithaQtp\TestProperties.txt"
 const fsoForReading = 1
 
-If objFSO.FileExists("G:\VanithaTrainings\VanithaQtp\TestProperties.txt") then
+If objFSO.FileExists(strFileName) then
 	'The file exists, so open it and output its contents
 	Set objTextStream = objFSO.OpenTextFile(strFileName, fsoForReading)
    'msgbox objTextStream.ReadAll
@@ -14,7 +12,6 @@ If objFSO.FileExists("G:\VanithaTrainings\VanithaQtp\TestProperties.txt") then
  While objTextStream.AtEndOfLine <> True
 	   		s = objTextStream.ReadLine
 			person=Split(s, "#")
-
 			msgbox  person(0) & ">>>>>>>>>>>" & person(1)
 Wend
  
@@ -27,7 +24,6 @@ End If
 
 'Clean up
 Set objFSO = Nothing
-
 
 
 
